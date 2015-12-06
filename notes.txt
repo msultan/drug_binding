@@ -1,0 +1,9 @@
+Steps to get project unto F@h
+1). Model Abl, Src, and Syk uniprot Sequences unto all available Abl, Src and Syk pdbs [X]
+2). Model in the drug using packmol
+3). Stick in water box + ions + hydrogens using tleap
+4). Use Amber99sb-ildn for protein,tip3p for water, and AM1-BCC for drug
+4). Amber 2-step minimization
+5). OpenMM equilibration for a 1ns apiece. 
+6). Internal benchmark
+7). Internal->Beta->Adv->Fah
