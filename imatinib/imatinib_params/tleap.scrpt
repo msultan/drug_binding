@@ -1,0 +1,8 @@
+source leaprc.gaff
+loadamberparams imatinib.frcmod
+
+LIG = loadmol2 imatinib_gen.mol2
+check LIG
+saveoff LIG lig.lib
+saveamberparm LIG lig.prmtop lig.inpcrd
+quit        

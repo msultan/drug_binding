@@ -1,0 +1,3 @@
+antechamber -i imatinib.pdb -fi pdb -o imatinib_gen.mol2 -fo mol2 -c bcc -s 2 -nc 1
+parmchk -i imatinib_gen.mol2 -f mol2 -o imatinib.frcmod
+tleap -f tleap.scrpt
