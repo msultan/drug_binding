@@ -1,0 +1,15 @@
+fyn kinase: initial minimization solvent + ions
+ &cntrl
+  imin   = 1,
+  maxcyc = 4000,
+  ncyc   = 1000,
+  ntb    = 1,
+  ntr    = 1,
+  cut    = 10.0
+ /
+Hold the protein fixed
+500.0
+RES 1 263
+RES 264 266
+END
+END

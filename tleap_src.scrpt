@@ -1,0 +1,12 @@
+source /home/msultan/software/amber12/amber12/dat/leap/cmd/leaprc.ff99SBildn
+source leaprc.gaff
+loadamberparams /home/msultan/research/kinase/drug_binding/2016/drug_binding/imatinib/imatinib_params/imatinib.frcmod
+loadoff /home/msultan/research/kinase/drug_binding/2016/drug_binding/imatinib/imatinib_params/lig.lib 
+
+src = loadpdb prot.pdb
+
+solvatebox src TIP3PBOX 10.0
+addions src Na+ 46 Cl- 45
+saveamberparm src src_wat.prmtop src_wat.inpcrd
+savepdb src prot.pdb
+quit
