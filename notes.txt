@@ -7,3 +7,9 @@ Steps to get project unto F@h
 5). OpenMM equilibration for a 1ns apiece. 
 6). Internal benchmark
 7). Internal->Beta->Adv->Fah
+
+Sequence of scripts:
+pull_unique.py
+pack_all.py
+min_all.py
+simulate.py(uses add_restraint.py)
