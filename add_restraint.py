@@ -8,7 +8,7 @@ import numpy as np
 def get_atoms_nearest_centroid(kinase,run_index=0):
     t=mdt.load("./%s_models/%d/%s.pdb"%(kinase,run_index,kinase))
 
-    protein_slice = t.atom_slice([i.index for i in t.top.atoms if i.residue.is_protein])
+    protein_slice = t.atom_slice([i.index for i in t.top.atoms if i.residue.is_protein and i.element.name!="hydrogen"])
     drug_slice = t.atom_slice([i.index for i in t.top.atoms if i.residue.name=='LIG'])
 
 
