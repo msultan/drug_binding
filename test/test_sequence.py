@@ -34,3 +34,4 @@ def test_ensembler():
             #check that seq matches up
             curr_seq = ''.join([i.code for i in t.top.residues if i.is_protein])
             assert(match_seq(kinase,curr_seq))
+        print "%s sequence successfully matched in %d pdbs"%(kinase,N)
