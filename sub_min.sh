@@ -9,7 +9,8 @@ module load openmpi/gcc/64/1.8.5
 echo $CUDA_VISIBLE_DEVICES
 ipcluster start &
 cd /home/msultan/research/kinase/drug_binding/2016/drug_binding/
-python min_all.py abl 
+python min_all.py src
+python min_all.py syk
 
 wait 
 
